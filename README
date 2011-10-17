@@ -1,0 +1,39 @@
+README for the NPS Pthread Pool Library
+=======================================
+See LICENSE for information on use and rights.
+
+Refer to the online project documentation for more information
+  http://code.google.com/p/nps-tpool
+
+
+Build
+-----
+To build the project:
+	make all
+
+This builds the static library 'libpool.a' against which you
+can link your C project.
+
+
+Testing
+-------
+Its advisable to run the unit tests to verify the library is
+compatible with the thread library you are using. This can be
+done via the command
+
+	make tests
+
+A period is printed to stdout for each successful unit test.
+If there is a failure, that unit test prints a capital F, e.g.
+	......F....F......FF...F...
+
+
+Individual unit tests can be re-run using the test suite binary,
+using the following command:
+	./thr_pool_test <name of test>
+Please include the output from the failed unit test, when
+submitting a bug report.
+
+The names of all tests in the test suite binary can be learned by
+running the binary with no arguments, i.e.
+	./thr_pool_test
