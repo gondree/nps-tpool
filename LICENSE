@@ -9,7 +9,11 @@ The "core project" is composed of the following source files and scripts:
   - /test/*.{h,c}
   - /test/test-dept-support/*.{h,c}
 
-The "core project" was prepared by an employee of the U.S. Government as part of that person's official duties. Thus, it is a U.S. Government work. Copyright protection is not provided for U.S. Government works under U.S. Copyright Law. Therefore, there is no copyright or protection to be transferred. This work is being released as Public Domain.
+The "core project" was prepared by an employee of the U.S. Government as part
+of that person's official duties. Thus, it is a U.S. Government work. 
+Copyright protection is not provided for U.S. Government works under U.S.
+Copyright Law. Therefore, there is no copyright or protection to be 
+transferred. This work is being released as Public Domain.
 
 This work is free of known copyright restrictions.
     http://creativecommons.org/publicdomain/mark/1.0/
