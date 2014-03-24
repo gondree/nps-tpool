@@ -25,7 +25,7 @@ CFLAGS += -DDEBUG_THR_POOL=0   # leveled debug, between 0 ... 6
 all: libtpool.a
 
 clean:
-	rm -f *.o libpool.a thr_pool_test
+	rm -f *.o libtpool.a thr_pool_test
 
 tests: thr_pool_test
 	sh test/test-dept/src/test_dept thr_pool_test 2> /dev/null
