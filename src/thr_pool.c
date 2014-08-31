@@ -16,6 +16,13 @@
 #define DEBUG_THR_POOL 0
 #endif
 
+#ifdef __MACH__ // OS X does not have clock_gettime, use clock_get_time
+#include <mach/clock.h>
+#include <mach/mach.h>
+#define clock_gettime(a,b)  clock_get_time(REALTIME_CLOCK,b);
+#endif
+
+
 //
 // debug-related macros
 //
