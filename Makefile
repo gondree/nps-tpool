@@ -18,7 +18,7 @@ TEST_DEPT_INCLUDE_PATH=$(TEST_DEPT)
 #
 CC = gcc
 LDFLAGS = -pthread -lrt
-CFLAGS  = -g -w -Iinclude  -I$(TEST_DEPT) -I$(TEST_SUPPORT)
+CFLAGS  = -g -w -fPIC -Iinclude  -I$(TEST_DEPT) -I$(TEST_SUPPORT)
 CFLAGS += -DDEBUG_THR_POOL=0   # leveled debug, between 0 ... 6
 
 
