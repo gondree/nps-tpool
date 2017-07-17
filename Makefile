@@ -47,4 +47,10 @@ TEST_SRCS = thr_pool_test.c
 thr_pool_test: pthread_mock.o stdlib_mock.o \
                test_dept_helper_functions.o
 
+
+ifeq (,$(LDFLAGS_UNRESOLVED))
+  LDFLAGS_UNRESOLVED += -Wl
+endif
+
 include $(TEST_DEPT)/test-dept.mk
+
